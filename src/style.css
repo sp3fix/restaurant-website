@@ -1,0 +1,183 @@
+body {
+  font-family: Montserrat;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+box-sizing: border-box; 
+}
+
+
+#content {
+    -webkit-perspective: 1px;
+            perspective: 1px;
+    -webkit-perspective-origin: 0 0;
+            perspective-origin: 0 0;
+    height: 100vh;
+    overflow-x: hidden;
+  overflow-y: scroll; }
+
+
+.cover {
+  background: rgba(0, 0, 0, 0.4);
+  background-size: 100% 100%;
+  display: block;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+z-index: 3; }
+
+
+section {
+  background-size: center;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  background-repeat: no-repeat;
+}
+
+#section-1 {
+  align-items: center;
+  justify-content: center;
+  background-image: url('homepage4.jpg');
+  position: relative;
+  height: 100vh;
+  padding: 0;
+}
+
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#logo {
+  background: url('logo-ben.png') no-repeat center;
+  opacity: 0.5;
+  background-size: contain;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  height: 40%;
+  border-radius: 5pt;
+}
+
+#section-2 {
+  width: 100%;
+  margin: 0px auto;
+  font-size: 1.5em;
+  background-color: #333;
+}
+
+#section-2 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #000000;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Passion One', Helvetica, cursive;
+  color: White;
+}
+
+#section-2 li {
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+#section-2 li a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer; 
+  font-family: Arvo;
+  padding: 24px 26px;
+}
+
+/* Change the link color to #111 (black) on hover */
+#section-2 li a:hover {
+  background-color: rgb(73, 24, 24);
+  color: white;
+}
+
+#section-3 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;   
+}
+
+.divContent {
+  width: 350px;
+  margin: 20px 10px;
+  padding : 5px;
+  font-family: Raleway;
+}
+
+.divContent h2 {
+  font-size: 2em;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 900;
+  font-family: Arvo
+}
+
+.divContent p {
+  line-height: 2;
+  padding: 2px;
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+#section-4 {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  background-image: url('homepage4.jpg');
+  position: relative;
+  height: 30vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.img {
+  margin: 20px auto;
+  height: 100px;
+  width: 100px;
+  border: 0;
+}
+
+.grow {
+  background: url('grow.gif') center no-repeat;
+}
+
+.invest {
+  background: url('invest.gif') center no-repeat;
+}
+
+.deliver {
+  background: url('deliver.gif') center no-repeat;
+}
