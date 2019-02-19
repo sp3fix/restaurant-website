@@ -44,7 +44,7 @@ section {
 #section-1 {
   align-items: center;
   justify-content: center;
-  background-image: url('homepage4.jpg');
+  background-image: url('img/homepage4.jpg');
   position: relative;
   height: 100vh;
   padding: 0;
@@ -61,7 +61,7 @@ section {
 
 
 #logo {
-  background: url('logo-ben.png') no-repeat center;
+  background: url('img/logo-ben.png') no-repeat center;
   opacity: 0.5;
   background-size: contain;
   position: absolute;
@@ -74,6 +74,40 @@ section {
   height: 40%;
   border-radius: 5pt;
 }
+
+#down-arrow {
+  background: url('img/down-arrow.gif') center no-repeat;
+  position: absolute;
+  left: 47%;
+  bottom: 2%;
+  z-index: 10;
+  width: 3rem;
+  height: 50px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+  animation-name: bounce; 
+}
+
+@-webkit-keyframes bounce {
+  40%, 60% {
+    -webkit-transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-10px); } }
+
+@keyframes bounce {
+  40%, 60% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  50% {
+    -webkit-transform: translateY(-10px);
+transform: translateY(-10px); } }
 
 #section-2 {
   width: 100%;
@@ -123,7 +157,9 @@ section {
 #section-3 {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;   
+  justify-content: center; 
+  align-items: flex-start;  
+  padding: 10px;
 }
 
 .divContent {
@@ -149,6 +185,58 @@ section {
   margin-bottom: 20px;
 }
 
+.productDesc {
+  width: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: flex-start;
+  margin: 10px 20px;
+  border-radius: 3pt;
+  font-family: Raleway;
+  box-shadow: 0px 2px 15px rgba(0,0,0,0.2);
+}
+
+.descEl {
+  padding: 10px;
+
+}
+
+.subTitle {
+  font-family: Raleway;
+  font-size: 1em;
+  font-weight: 500;
+  color: grey;
+  margin-bottom: 10px;
+  padding-top: 3px;
+  border-top: 2px solid #6f4e37;
+}
+
+.subText {
+  font-family: Arvo;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: black;
+  line-height: 1.1;
+}
+
+.Light { background-color: #A24208; }
+.Medium { background-color: #7C2E00; }
+.Dark { background-color: #552000; }
+
+.Light .subText, .Medium .subText, .Dark .subText {
+  color: white;
+}
+
+.Light .subTitle, .Medium .subTitle, .Dark .subTitle {
+  border-top: 2px solid white;
+  color: white;
+}
+
+#map {
+  height: 500px;
+  width: 60%;
+}
+
 #section-4 {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -156,7 +244,8 @@ section {
   -webkit-box-pack: center;
     -ms-flex-pack: center;
         justify-content: center;
-  background-image: url('homepage4.jpg');
+  background-image: url('img/homepage4.jpg');
+  
   position: relative;
   height: 30vh;
   background-attachment: fixed;
@@ -171,13 +260,13 @@ section {
 }
 
 .grow {
-  background: url('grow.gif') center no-repeat;
+  background: url('img/grow.gif') center no-repeat;
 }
 
 .invest {
-  background: url('invest.gif') center no-repeat;
+  background: url('img/invest.gif') center no-repeat;
 }
 
 .deliver {
-  background: url('deliver.gif') center no-repeat;
+  background: url('img/deliver.gif') center no-repeat;
 }
