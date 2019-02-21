@@ -13,7 +13,7 @@ const backgroundImg = () => {
 }
 
 const homeContent = () => {
-  let desc = {grow :  ['We Grow','grow','Our farmer-owners have access to some of the best organic coffee in the world. They have a deep interest in seeing that you love their coffee. So, it only makes sense to carefully control quality from farm to cup. We grow, harvest, clean, import, roast, and deliver our best coffee directly to you.'], 
+  let desc = {grow :  ['We Grow','grow','Our farmer/owners have access to some of the best organic coffee in the world. They have a deep interest in seeing that you love their coffee. So, it only makes sense to carefully control quality from farm to cup. We grow, harvest, clean, import, roast, and deliver our best coffee directly to you.'], 
               invest : ['You Invest', 'invest', 'Choose to pre-pay seasonally or pay monthly for your share of the harvest. You may pause or cancel at anytime and we always offer free shipping. Repeat business is important for farmers because it gives them a good reason to stay on the farm and to invest in organic production'],
               deliver : ['We Deliver', 'deliver','We roast coffee daily in small batches in Sacramento, California. 100% of the coffee we roast is certified organic and grown under shade-canopy by small farmers. Whether you\'re near or far, you get to enjoy delicious coffee from responsible family farms around the world in the comfort of your home.']          
                       }
